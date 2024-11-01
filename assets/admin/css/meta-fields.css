@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#misc-publishing-actions .wps-field {
+    padding: 15px 10px;
+    background: #ffc10726;
+}
+
+#misc-publishing-actions .wps-field label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+#misc-publishing-actions .wps-field .wps-field-inputs {
+    width: 100%;
+    margin-left: 0;
+}
+
+#misc-publishing-actions .wps-field .wps-field-inputs fieldset br {
+    display: none;
+}
+
+
+.meta-field-groups {
+    padding: 20px;
+    min-height: 200px;
+}
+
+.meta-field-groups .meta-field-group {
+    padding: 15px;
+    background: #ffffff;
+    margin: 15px 0;
+    border-radius: 3px;
+}
+
+.meta-field-groups .meta-field-group .meta-field-group-head {
+    position: relative;
+}
+
+.meta-field-groups .meta-field-group .group-controller {
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.meta-field-groups .meta-field-group .group-controller i {
+    background: #fff;
+    padding: 8px 12px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #FF9800;
+    border: 1px solid;
+}
+
+#wpdl_meta_box .inside h3 {
+    margin-top: 40px;
+}
+
+#wpdl_meta_box .wps-field {
+    padding: 30px;
+    background: rgba(132, 132, 132, 0.05);
+    margin: 22px 0;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+}
+
+#wpdl_meta_box .wps-field fieldset label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+#wpdl_meta_box .media_preview {
+    background: transparent !important;
+    padding: 0 !important;
+    width: 100px !important;
+}
+
+#wpdl_meta_box textarea,
+#wpdl_meta_box .select2-container,
+#wpdl_meta_box select {
+    min-width: 350px;
+}
+
+#wpdl_meta_box select,
+#wpdl_meta_box .select2-container .select2-selection--single {
+    height: 35px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border-color: #dedede !important;
+    box-shadow: none !important;
+    width: 99%;
+}
+
+#wpdl_meta_box .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    top: 67%;
+}
+
+.select2-container .select2-dropdown {
+    border: 1px solid #dedede;
+}
+
+#wpdl_meta_box .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 33px;
+}
+
+#wpdl_meta_box .select2-container--default .select2-selection--single {
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+}
+
+.meta-fields {
+    display: none;
+    margin-top: 20px;
+}
+
+.meta-fields .add-new-meta-field {
+    margin-bottom: 15px;
+}
+
+.meta-fields .meta-field {
+    margin-bottom: 10px;
+}
+
+.meta-fields .meta-field {
+    padding: 15px;
+    background: #de792b2e;
+    border-radius: 5px;
+}
+
+.meta-fields .meta-field .meta-field-inline {
+    display: inline-block;
+}
+
+.meta-fields .meta-field .meta-field-controller {
+    float: right;
+}
+
+.meta-fields .meta-field .meta-field-controller i {
+    background: #fff;
+    padding: 10px 12px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #FF9800;
+    border: 1px solid;
+}
+
+.meta-fields .meta-field .meta-field-controller i.drag-meta-field {
+    cursor: move;
+}
+
+.meta-icon-search {
+
+}
+
+.meta-icon-search .search-field {
+
+}
+
+
+.meta-field-groups input[type=text],
+.meta-field-groups select {
+    border: 1px solid #d49a45;
+    outline: none;
+    box-shadow: none;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+.meta-field-groups select {
+    height: 33px;
+    line-height: 33px;
+    display: inline-block;
+    vertical-align: top;
+}

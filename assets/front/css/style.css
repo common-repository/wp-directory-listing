@@ -1,0 +1,619 @@
+/**
+ * Main front end Style
+ */
+@import "single-directory.css";
+
+
+/**
+ * Defining Buutton Styles
+ */
+
+
+.wpdl-btn,
+.wpdl-btn:active,
+.wpdl-btn:focus,
+button.wpdl-btn,
+button.wpdl-btn:active,
+button.wpdl-btn:focus {
+    background: #f38181;
+    color: #fff !important;
+    padding: 8px 20px;
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    border: none;
+    transition: all 0.3s;
+    border-radius: 3px;
+    text-decoration: none;
+    min-width: 120px;
+}
+
+.wpdl-btn:hover,
+button.wpdl-btn:hover {
+    background: #c55656;
+    color: #fff;
+}
+
+.wpdl-form .wpdl-form-group label {
+    display: inline-block;
+    margin-bottom: 6px;
+    color: #454545;
+}
+
+.wpdl-form .wpdl-form-group .wpdl-form-field {
+    background-color: #f2f3f7;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    outline: none;
+}
+
+
+.wpdl-form .wpdl-form-group .wpdl-rating-field {
+    list-style: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    margin: 0 0 0 15px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wpdl-form .wpdl-form-group .wpdl-rating-field li {
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: #8a8a8a;
+    transition: all 0.2s;
+}
+
+.wpdl-form .wpdl-form-group .wpdl-rating-field li.hover {
+    color: #ec8f05;
+}
+
+.wpdl-form .wpdl-form-group .wpdl-rating-field li.selected {
+    color: #f6a444;
+}
+
+.wpdl-form input#wp-submit {
+    min-width: 110px;
+}
+
+
+/* -----------------------------------
+ * Directory Archive Start
+ * ----------------------------------- */
+
+ul.directory-archive > li {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    ul.directory-archive.directory-column-1 > li {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    ul.directory-archive.directory-column-2 > li {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    ul.directory-archive.directory-column-3 > li {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    ul.directory-archive.directory-column-4 > li {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+.directory-results-count {
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.directory-archive-sorting {
+    float: right;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.directory-archive-sorting label {
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.directory-archive-sorting select{
+    font-size: 14px;
+    padding: 11px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+ul.directory-archive {
+    margin: 0;
+    padding: 0;
+}
+
+ul.directory-archive > li > .directory-item-thumbnail {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.directory-item-thumbnail .fav-btn {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    height: 40px;
+    width: 40px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(130, 130, 130);
+    color: #fff;
+    cursor: pointer;
+}
+
+.directory-item-thumbnail .fav-btn.fav {
+    background-color: #f91942;
+}
+
+ul.directory-archive > li > .directory-item-thumbnail img {
+    transition: transform 0.4s linear;
+}
+
+ul.directory-archive > li > .directory-item-thumbnail:hover img {
+    transform: scale(1.1);
+}
+
+ul.directory-archive > li > .directory-item-title a {
+    text-decoration: none;
+    color: #484848;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    transition: all 0.2s;
+}
+
+ul.directory-archive > li > .directory-item-title a:hover {
+    color: #8a8a8a;
+}
+
+/* -----------------------------------
+ * Pagination Design Global
+ * ----------------------------------- */
+
+.wpdl-pagination {
+    margin: 25px 0;
+}
+
+.wpdl-pagination .page-numbers {
+    background: #F57D7C none repeat scroll 0 0;
+    margin: 0 2px;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #fff !important;
+    border-radius: 2px;
+}
+
+.wpdl-pagination .current {
+    background: #524f71 none repeat scroll 0 0;
+}
+
+.wpdl-myaccount-content .wpdl-pagination {
+    margin: 40px 0 0;
+}
+
+
+/* -----------------------------------
+ * My Account Navigation
+ * ----------------------------------- */
+
+ul.wpdl-myaccount-navigation {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+ul.wpdl-myaccount-navigation li {
+    list-style: none;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+ul.wpdl-myaccount-navigation li:first-child {
+    margin-left: 0;
+}
+
+ul.wpdl-myaccount-navigation li a {
+    text-decoration: none;
+    background: #fff;
+    padding: 25px;
+    display: block;
+    font-size: 14px;
+    min-width: 130px;
+    border-radius: 3px;
+    position: relative;
+    border: 1px solid #dedede;
+    transition: 0.3s;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+ul.wpdl-myaccount-navigation li.is-active a,
+ul.wpdl-myaccount-navigation li:hover a {
+    background: #0a4579;
+    border-color: #0a4579;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(12, 67, 101, .2);
+}
+
+ul.wpdl-myaccount-navigation li.is-active a:after {
+    left: 50%;
+    bottom: -24px;
+    border: 12px solid transparent;
+    content: '';
+    position: absolute;
+    border-top-color: #0a4579;
+    margin-top: -5px;
+    transform: translateX(-50%);
+}
+
+ul.wpdl-myaccount-navigation li a i {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.wpdl-myaccount-content {
+    padding: 35px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    background: #f6f7fb;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 45px;
+}
+
+.wpdl-myaccount-content .wpdl-form  select,
+.wpdl-myaccount-content .wpdl-form input[type="text"],
+.wpdl-myaccount-content .wpdl-form input[type="number"] {
+    width: 100%;
+    border: 1px solid #dedede;
+    max-width: inherit;
+}
+
+.wpdl-myaccount-content .wpdl-form > .wpdl-btn {
+    min-width: 200px;
+    height: 60px;
+    font-size: 16px;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.wpdl-myaccount-content .wps-field .wps-field-inputs input[type=number] {
+    padding: 7px 16px;
+    border-radius: 3px;
+}
+
+#content .wpdl-myaccount-content input[type="text"],
+.wpdl-myaccount-content input[type="text"] {
+    padding: 10px 15px;
+}
+
+/* -----------------------------------
+ * WPDL Form
+ * ----------------------------------- */
+
+h2.wpdl-login-title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+}
+
+.wpdl-form.wpdl-form-login {
+    padding: 25px;
+    max-width: 350px;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    background: #f6f7fb;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* -----------------------------------
+ * WPDL Table
+ * ----------------------------------- */
+
+
+.wpdl-table tr:nth-child(even){
+    background: #f9f9f9;
+}
+
+.wpdl-table tr:nth-child(odd){
+    background: #fff;
+}
+
+.wpdl-table tr th{
+    background: #ff7479;
+    color: #fff;
+    padding: 10px 25px;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.wpdl-table tr th:first-child{
+    border-top-left-radius: 3px;
+}
+
+.wpdl-table tr th:last-child{
+    border-top-right-radius: 3px;
+}
+
+.wpdl-table tr td{
+    padding: 10px 25px;
+    border-color: rgba(0,0,0,0.07);
+    font-size: 13px;
+}
+
+.wpdl-table tr td a {
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s;
+}
+
+.wpdl-directories-meta {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+/* -----------------------------------
+ * WPDL Form
+ * ----------------------------------- */
+
+.wpdl-form-field {
+    margin-bottom: 15px;
+}
+
+.wpdl-form .login-remember {
+    margin-bottom: 9px;
+}
+
+.wpdl-form .wpdl-form-field label {
+    display: inherit;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.wpdl-form input[type=text],
+.wpdl-form input[type=email],
+.wpdl-form input[type=number],
+.wpdl-form textarea
+{
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    min-height: 22px;
+    font-size: 14px;
+}
+
+.wpdl-form .login-submit {
+    margin-bottom: 0;
+}
+
+.wpdl-form .wp-editor-wrap{
+    width: 100%;
+}
+
+.wpdl-form .wps-field{
+    display: block;
+    width: 100%;
+}
+
+.wpdl-form .wps-field .wps-field-inline{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.wpdl-form .wps-field .wps-field-title{
+    width: 120px;
+    font-weight: 600;
+}
+
+.wpdl-form .wps-field .wps-field-inputs{
+    width: calc(100% - 135px);
+    min-width: 120px;
+}
+
+.wpdl-form .wps-field .wps-field-inputs .description{
+    font-size: 13px;
+    font-style: italic;
+    margin: 8px 0 5px;
+    color: #7a7a7a;
+}
+
+.wpdl-form .wps-field .wps-field-inputs input,
+.wpdl-form .wps-field .wps-field-inputs textarea,
+.wpdl-form .wps-field .wps-field-inputs select{
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.wpdl-form .wps-field .wps-field-inputs input[type="checkbox"],
+.wpdl-form .wps-field .wps-field-inputs input[type="radio"] {
+    padding: 0;
+}
+
+.wpdl-form input[type=checkbox],
+.wpdl-form input[type=radio] {
+    margin-right: 8px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    margin-top: -2px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    transition: 0.3s;
+    padding: 0;
+}
+
+.wpdl-form input[type=radio] {
+    border-radius: 50%;
+}
+
+.wpdl-form input[type=checkbox]:checked,
+.wpdl-form input[type=radio]:checked {
+    background: #0d508b;
+}
+
+.wpdl-form.wpdl-form-login label {
+    margin-bottom: 10px;
+}
+.wpdl-form-login input#user_pass {
+    width: 100%;
+}
+
+
+/* -----------------------------------
+ * WPDL Notice
+ * ----------------------------------- */
+
+.wpdl-notice {
+    background: #ddd;
+    margin-bottom: 12px;
+    padding: 8px 10px;
+    font-size: 12px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: 3px solid;
+    position: relative;
+}
+
+.wpdl-notice a {
+    padding: 0px 14px;
+    background: #fffbf1;
+    border-radius: 5px;
+    border: 1px solid #f5e2b6;
+    margin-left: 10px;
+    float: right;
+}
+
+.wpdl-notice.wpdl-notice-info {
+    border-color: #00bcd4;
+    background: #00bcd447;
+}
+
+.wpdl-notice.wpdl-notice-warning {
+    border-color: #ffc107;
+    background: #ffc10747;
+}
+
+.wpdl-notice.wpdl-notice-error {
+    border-color: #ff5722;
+    background: #ff572247;
+}
+
+
+/* -----------------------------------
+ * WPDL Dashboard
+ * ----------------------------------- */
+
+.wpdl-dashboard {
+    font-size: 13px;
+}
+
+.wpdl-myaccount-content .wpdl-directories-meta {
+    width: 100%;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wpdl-myaccount-content .wpdl-directories-meta span.item-count {
+    font-size: 20px;
+}
+
+.wpdl-dashboard .wpdl-dashboard-single {
+    margin-bottom: 20px;
+}
+.wpdl-dashboard .wpdl-dashboard-single:last-child {
+    margin-bottom: 0;
+}
+
+.wpdl-dashboard .wpdl-dashboard-single .wpdl-dashboard-label,
+.wpdl-dashboard .wpdl-dashboard-single .wpdl-dashboard-value{
+    display: inline-block;
+}
+
+.wpdl-dashboard .wpdl-dashboard-single .wpdl-dashboard-label{
+    min-width: 150px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.wpdl-dashboard .wpdl-dashboard-single .wpdl-dashboard-value {
+    font-size: 15px;
+}
+
+.wpdl-dashboard hr{
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 15px;
+}
+
+@media only screen and (max-width: 479px) {
+    .wpdl-myaccount-content ul.wpdl-tabs-head li:first-child {
+        margin-bottom: 10px;
+    }
+    .wpdl-myaccount-content ul.wpdl-tabs-head li,
+    .wpdl-myaccount-content ul.wpdl-tabs-head li > * {
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-radius: 3px;
+    }
+    .wpdl-form .wps-field .wps-field-title {
+        width: 100%;
+    }
+    .wpdl-form .wps-field .wps-field-inputs {
+        margin-left: 0;
+        width: 100%;
+    }
+    .wpdl-tabs {
+        margin-top: 30px;
+    }
+    .entry-content ul.wpdl-tabs-head, ul.wpdl-tabs-head {
+        padding-left: 0;
+        margin: 0 0 10px;
+    }
+}
+
+
+
+
